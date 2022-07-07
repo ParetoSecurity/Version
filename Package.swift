@@ -8,7 +8,10 @@ let pkg = Package(
         .library(name: "Version", targets: ["Version"]),
     ],
     targets: [
-        .target(name: "Version", path: "Sources"),
+        .target(
+            name: "Version",
+            path: "Sources"
+        )
     ],
     swiftLanguageVersions: [.version("5.5")]
 )

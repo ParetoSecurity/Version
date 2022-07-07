@@ -1,13 +1,14 @@
-// swift-tools-version:4.2
+// swift-tools-version:5.5
 import PackageDescription
 
 let pkg = Package(
     name: "Version",
+    platforms: [.macOS(.v11)],
     products: [
         .library(name: "Version", targets: ["Version"]),
     ],
     targets: [
         .target(name: "Version", path: "Sources"),
     ],
-    swiftLanguageVersions: [.v4, .v4_2, .version("5")]
+    swiftLanguageVersions: [.version("5.5")]
 )

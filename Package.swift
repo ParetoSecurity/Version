@@ -1,7 +1,7 @@
 // swift-tools-version:5.5
 import PackageDescription
 
-let pkg = Package(
+let package = Package(
     name: "Version",
     platforms: [.macOS(.v11)],
     products: [
